@@ -131,7 +131,7 @@ function determineImage(day, month) {
         return "img/" + a + ".png"
     }
     if (a == 7) {
-        return "img/" + a + ".png"
+        return "img/" + a + ".jpeg"
     }
     if (a == 8) {
         return "img/" + a + ".png"
@@ -143,7 +143,7 @@ function determineImage(day, month) {
         return "img/" + a + ".png"
     }
     if (a == 11) {
-        return "img/" + a + ".png"
+        return "img/" + a + ".jpeg"
     }
     if (a == 12) {
         return "img/" + a + ".png"
@@ -234,7 +234,7 @@ function onSubmit(){
     var m = parseInt(document.getElementById("selectMonth").value);
     validateName(name);
     validateDate(d, m);
-    document.getElementById("sign").innerHTML = "Hi " + name + ". " + checkBirthday(d, m) + "Your sign is: " + determineSign(d, m);
+    document.getElementById("sign").innerHTML = "Hi " + name + "! " + checkBirthday(d, m) + "Your sign is: " + determineSign(d, m);
     document.getElementById("image").src = determineImage(d, m);
     document.getElementById("horoscope").innerHTML = determineHoroscope(d, m);
 }
