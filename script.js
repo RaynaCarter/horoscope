@@ -10,6 +10,7 @@ function validateName(x) {
     }
 }
 
+
 function validateDate(x, y) {
     if (x == "" || y == "") {
         alert("Invalid Date");
@@ -125,7 +126,7 @@ function determineImage(day, month) {
         return "img/" + a + ".png"
     }
     if (a == 5) {
-        return "img/" + a + ".jpg"
+        return "img/" + a + ".png"
     }
     if (a == 6) {
         return "img/" + a + ".png"
@@ -238,4 +239,6 @@ function onSubmit(){
     document.getElementById("image").src = determineImage(d, m);
     document.getElementById("horoscope").innerHTML = determineHoroscope(d, m);
 }
+
+
 
